@@ -1,21 +1,20 @@
 import { Experience, Project, SkillCategory, SocialLinks } from "./types";
-import { Github, Linkedin, Mail, Code, Brain, Database, Terminal, Layers } from "lucide-react";
 
 export const SOCIAL_LINKS: SocialLinks = {
   linkedin: "https://www.linkedin.com/in/shyamtr/",
   github: "https://github.com/TRshyam",
-  email: "shyamraveedran@gmail.com", // Placeholder
+  email: "shyamraveedran@gmail.com",
 };
 
 export const HERO_CONTENT = {
   name: "Shyam T.R",
   title: "AI Research Engineer",
-  tagline: "I build practical AI systems in computer vision, deep learning, and real-time analytics.",
+  tagline: "I build practical AI systems for perception, tracking, and real-time inference.",
 };
 
-export const ABOUT_CONTENT = `I’m Shyam T.R, an AI research engineer focused on computer vision and deep learning. I like building real-world systems like surgical tool analysis, sports tracking, and behavior monitoring. I care about clean implementations, reliable models, and solving problems that actually help people and businesses.`;
+export const ABOUT_CONTENT = `I’m Shyam T.R, an AI research engineer at iGrad AI Labs. I work on vision models and production-grade real-time systems. My recent work includes surgical tool analysis, sports tracking, and automated behavior monitoring. I enjoy solving problems where accuracy, speed, and deployment matter.`;
 
-export const FUTURE_GOALS = `I’m interested in research-oriented roles in computer vision and deep learning, and I’m preparing for opportunities like AI internships and roles at companies such as Sony Research India. I’m also learning German as I plan to move to Germany, and I’m exploring ideas around hosting, storage, and private server services for businesses.`;
+export const FUTURE_GOALS = `I'm planning to pursue a master's degree in Germany in areas like AI, robotics, and autonomous systems. I’m especially interested in perception pipelines, ROS-based systems, and intelligent automation. I’m preparing for research roles and internships in computer vision and deep learning while improving my academic foundation and applied experience.`;
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
@@ -24,19 +23,26 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     category: "Computer Vision",
-    skills: ["Segmentation", "Object Detection", "Tracking", "Edge Detection", "Contour Analysis", "Pixel-to-mm Measurement"],
+    skills: [
+      "Segmentation",
+      "Object Detection",
+      "Tracking",
+      "Edge Detection",
+      "Contour Analysis",
+      "Pixel-to-mm Measurement",
+    ],
   },
   {
     category: "Backend & APIs",
-    skills: ["Flask","FastAPI", "REST APIs"],
+    skills: ["Flask", "FastAPI", "REST APIs"],
   },
   {
-    category: "Frontend & Tools",
+    category: "Frontend & Tooling",
     skills: ["React", "OpenCV", "Git", "Cloud Concepts", "Dashboards"],
   },
   {
-    category: "Soft Skills",
-    skills: ["Research Thinking", "Clear Communication", "Team Collaboration", "Fast Learner"],
+    category: "Professional Skills",
+    skills: ["Research Thinking", "Clear Communication", "Collaboration", "Fast Learning"],
   },
 ];
 
@@ -44,44 +50,48 @@ export const PROJECTS: Project[] = [
   {
     id: "surgical-tool",
     title: "Surgical Tool Classification & Measurement",
-    description: "System to detect and segment surgical tools, then measure their size for classification.",
+    description:
+      "A system that segments surgical tools and classifies them based on calibrated pixel-to-mm size measurements.",
     techStack: ["YOLOv8", "U-Net", "Flask", "OpenCV", "React"],
     points: [
-      "Segmented tools instead of only using bounding boxes.",
-      "Converted pixels to millimeters for tool height/width.",
-      "Integrated with a Flask backend and real-time camera feed.",
+      "Used instance segmentation instead of basic bounding boxes.",
+      "Measured tool dimensions in millimeters for classification.",
+      "Integrated model outputs with a Flask backend and live camera stream.",
     ],
   },
   {
     id: "cricket-tracking",
     title: "Cricket Ball Tracking & 3D Trajectory",
-    description: "Computer vision system to detect, track, and predict a cricket ball’s motion.",
+    description:
+      "A real-time system for detecting, tracking, and predicting cricket ball trajectory.",
     techStack: ["Detectron2", "OpenCV", "Kalman Filter", "DeepSORT"],
     points: [
-      "Segmented the cricket ball and tracked it across frames.",
-      "Used a Kalman filter and DeepSORT for prediction and tracking.",
-      "Converted 2D coordinates to 3D pitch coordinates with calibration.",
+      "Segmented and tracked the ball across video frames.",
+      "Used a Kalman filter and DeepSORT to improve stability and continuity.",
+      "Mapped 2D detections to 3D pitch coordinates through calibration.",
     ],
   },
   {
     id: "cattle-behavior",
     title: "Cattle Behavior Analytics Dashboard",
-    description: "Dashboard to visualize cattle behaviors like standing, lying, and eating.",
-    techStack: ["React", "Flask", "Data Visualization"],
+    description:
+      "A dashboard that visualizes behavioral patterns like standing, lying, and eating.",
+    techStack: ["React", "Flask", "Visualization"],
     points: [
-      "Visualized data for multiple cows over time.",
-      "Grouped behaviors by lying/eating time.",
-      "Backend served insights from processed data.",
+      "Processed and displayed behavior patterns for multiple animals.",
+      "Applied grouping based on lying and eating duration.",
+      "Backend exposed processed analytics through an API.",
     ],
   },
   {
     id: "greenkaufen",
     title: "Greenkaufen – Eco-friendly E-commerce",
-    description: "Prototype of an eco-friendly e-commerce platform focusing on sustainability.",
+    description:
+      "A prototype e-commerce platform focused on sustainable products and analytics.",
     techStack: ["Flask", "Python", "Analytics"],
     points: [
-      "Analysed one year of sales data across ~30 products.",
-      "Focus on sustainability and product impact.",
+      "Evaluated one year of product-level sales data for trends.",
+      "Designed the system with sustainability as a core focus.",
     ],
   },
 ];
@@ -91,15 +101,17 @@ export const EXPERIENCE: Experience[] = [
     id: "ai-research-project",
     type: "work",
     role: "AI Research Engineer",
-    company: "IGrad AI Labs", 
+    company: "IGrad AI Labs",
     period: "Dec 2024 - Present",
-    description: "Worked on a computer vision project involving segmentation, detection, model training, evaluation, and real-time inference.",
+    description:
+      "Working on a computer vision pipeline involving model training, segmentation, evaluation, and real-time inference.",
   },
   {
     id: "bachelors",
     type: "education",
-    role: "Bachelor’s in Engineering",
-    company: "Nandha Engineering College", // Placeholder as specific college wasn't provided
-    description: "Relevant Coursework: Computer Vision, Machine Learning, Deep Learning, Data Structures.",
+    role: "Bachelor's in Engineering (AI & Data Science)",
+    company: "Nandha Engineering College",
+    description:
+      "Relevant coursework: Computer Vision, Machine Learning, Deep Learning, and Data Structures.",
   },
 ];
