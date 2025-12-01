@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, Code, Brain, Database, Terminal, Layers } from 
 export const SOCIAL_LINKS: SocialLinks = {
   linkedin: "https://www.linkedin.com/in/shyamtr/",
   github: "https://github.com/TRshyam",
-  email: "t.r.shyam0007@gmail.com", // Placeholder
+  email: "shyamraveedran@gmail.com", // Placeholder
 };
 
 export const HERO_CONTENT = {
